@@ -124,6 +124,9 @@ body {
 }
 
 
+.skill .bars p, .side-content .skill .bars span {
+  line-height: 10px;
+} 
 /* #site main */
 
 
