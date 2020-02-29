@@ -127,6 +127,25 @@ body {
 .skill .bars p, .side-content .skill .bars span {
   line-height: 10px;
 } 
+
+
+#footer form .row .col input[type="text"],
+#footer form .row .col input[type="email"],
+#footer form textarea{
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid gray;
+    padding: 1.5rem 1rem;
+}
+
+@media screen and (min-width: 768px){
+  .toggle-button{
+      display: none;
+  }
+  #header{
+      z-index:0;
+  }
+}
 /* #site main */
 
 
