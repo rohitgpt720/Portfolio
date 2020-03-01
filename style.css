@@ -1,8 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald|Rambla|Staatliches&display=swap');
 
+/* @font-face {
+  src: url('/fonts/Aemstel-LineOutside.otf');
+  font-family: aemstel;
+}
+@font-face {
+  src: url('/fonts/Antro_Vectra_Bolder.otf');
+  font-family: antro;
+}
+@font-face {
+  src: url('/fonts/Panterick\ [Demo\ Version].ttf');
+  font-family: panterick;
+} */
+
 body {
   margin : 0;
   padding : 0;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background : #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background : #6649b8;
 }
 
 :root {
@@ -12,10 +37,18 @@ body {
   --font-staat:'Staatliches',cursive;
   --font-os:'Oswald', sans-serif;
   --font-ram:'Rambla',sans-serif;  
+  /* --font-an: 'aemstel'; */
 }
 
 /* global classes */
 
+
+
+
+/* 
+.font-aemstel {
+  font-family: var(--font-an);
+}  */
 
 .font-staat {
   font: normal 400 18px var(--font-staat);
@@ -65,13 +98,19 @@ body {
 }
 
 #header .nav-link{
-  margin: .7rem 1rem;
-  border-bottom: 1px solid var(--color-border);
+  text-align: center;
+  margin: .4rem 0.5rem;
+  /* border-bottom: 1px solid var(--color-border); */
   text-transform: uppercase;
+}
+
+#header .nav-social-icons:hover {
+  color : #6649b8 !important;
 }
 
 #header .nav-link:hover{
   color:var(--color-white) !important;
+  border-bottom: 1px solid #6649b8;
 }
 
 #header .toggle-button {
